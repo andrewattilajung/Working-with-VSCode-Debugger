@@ -16,7 +16,8 @@ function cutestCat(cats) {
 
       let cat = cats[i]; //need the values of cuteness to compare to a number
     debugger
-    console.log(cat)
+     let value = cat['cuteness']
+     console.log(value);
     if (cats.cuteness > currentCutest) {
 
       cutest = cat.cuteness;
