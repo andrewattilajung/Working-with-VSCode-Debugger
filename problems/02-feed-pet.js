@@ -6,13 +6,20 @@ of foods that you have fed that pet.
 
 */
 
-function feedPet(name) {
-  const foods = [];
-  return (food) => {
-    return "Fed " + name + " " + foods.push(food) + ".";
+function feedPet(name) {  //name = hydra
+
+  const foods = [];       //foods array init
+
+  return (food) => {  // returns entire function
+
+
+    foods.push(food);
+    
+    return "Fed " + name + " " + foods.join(', ') + ".";
+
   }
 }
-
+// setting variable   equal to return function
 const feedHydra = feedPet('Hydra');
 
 console.log(feedHydra('bones')); // Fed Hyrda bones.
