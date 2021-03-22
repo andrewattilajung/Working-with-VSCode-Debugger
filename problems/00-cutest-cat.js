@@ -10,14 +10,15 @@ function cutestCat(cats) {
   let i = 0;
 
   while (i < cats.length) {
-
     i++;
-  }
-     const cat = cats[i];
+    debugger
+    const cat = cats[i];
     if (cat > cutest) {
       cutest = cat.cuteness;
     }
-
+  }
+  
+    debugger
   return cutest;
 }
 
